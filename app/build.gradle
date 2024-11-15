@@ -35,8 +35,8 @@ android {
         buildConfigField "boolean", "IS_GPLAY_BUILD", "false"
         buildConfigField "String[]", "DETECTED_ANDROID_LOCALES", "${findUsedAndroidLocales()}"
         buildConfigField "String", "BUILD_DATE", "\"${getBuildDate()}\""
-        buildConfigField "String", "GITHASH", "\"${getGitHash}\""
-        buildConfigField "String", "GITMSG", "\"${getGitLastCommitMessage}\""
+//        buildConfigField "String", "GITHASH", "\"${getGitHash}\""
+//        buildConfigField "String", "GITMSG", "\"${getGitLastCommitMessage}\""
         setProperty("archivesBaseName", applicationId + "-v" + versionCode + "-" + versionName)
     }
 
